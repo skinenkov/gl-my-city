@@ -1,0 +1,16 @@
+
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let element of elements" [ngClass]="{'info': isActiveElement(element)}">
+        <td>
+          <a href="javascript:void(0);" (click)="onClick(element)">
+            <strong>{{ element.title }} {{ element.stars }}*</strong>
+          </a><br/>
+          <p>        
+            <small>{{ element.address }} <br/>
+            {{ element.phone }}        </small>
+          </p>    
+        </td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,18 @@
+<div class="row filter-element">
+  <div class="col-md-4" *ngIf="searchField">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon3">Search: </span>
+      <input type="text" class="form-control text-search" aria-describedby="basic-addon3" (input)="onSearchInput($event)" />
+    </div>
+  </div>  
+  <div class="col-md-8">
+    <div class="input-group filter-group" *ngFor="let field of buttonFields">    
+      <span class="input-group-addon">{{ field.name }}: </span>
+      <span class="input-group-btn">      
+        <button class="btn btn-default" [ngClass]="{'btn-info': valueSelected(field.code, value)}" type="button" 
+            *ngFor="let value of field.values" 
+            (click)="fieldSelect(field.code, value)">{{ value }}</button>
+      </span>    
+    </div>  
+  </div>
+</div>

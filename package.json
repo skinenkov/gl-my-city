@@ -1,0 +1,26 @@
+{
+  "name": "gl-my-city",
+  "version": "1.0.0",
+  "description": "ProCamp my city demo project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skinenkov/gl-my-city.git"
+  },
+  "keywords": [
+    "kharkiv",
+    "ukraine"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skinenkov/gl-my-city/issues"
+  },
+  "homepage": "https://github.com/skinenkov/gl-my-city#readme",
+  "dependencies": {
+    "@angular/cli": "^7.3.5"
+  }
+}
